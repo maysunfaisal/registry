@@ -11,7 +11,10 @@ components:
       endpoints:
         - name: 'http-8080'
           configuration:
+            discoverable: false
             public: true
+            protocol: tcp
+            scheme: http
           targetPort: 8080
       volumeMounts:
         - name: m2

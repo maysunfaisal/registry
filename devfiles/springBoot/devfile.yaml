@@ -29,7 +29,10 @@ components:
       endpoints:
         - name: '8080/tcp'
           configuration:
+            discoverable: false
             public: true
+            protcol: tcp
+            scheme: http
           targetPort: 8080
       mountSources: false
       volumeMounts:
